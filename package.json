@@ -1,0 +1,38 @@
+{
+  "name": "blackroad-workflow-builder",
+  "version": "1.0.0",
+  "description": "BlackRoad Workflow Builder — DAG-based visual workflow execution engine with step dependencies, cycle detection, run history, Stripe integration, and a full CLI.",
+  "keywords": [
+    "workflow",
+    "dag",
+    "pipeline",
+    "automation",
+    "stripe",
+    "payments",
+    "orchestration",
+    "blackroad"
+  ],
+  "homepage": "https://github.com/BlackRoad-OS/blackroad-workflow-builder#readme",
+  "bugs": {
+    "url": "https://github.com/BlackRoad-OS/blackroad-workflow-builder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackRoad-OS/blackroad-workflow-builder.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "BlackRoad OS, Inc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Run Python tests with: pytest tests/ -v\" && exit 0",
+    "lint": "echo \"Run Python lint with: flake8 src/ tests/\" && exit 0",
+    "start": "echo \"Start CLI with: python src/workflow_builder.py\" && exit 0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

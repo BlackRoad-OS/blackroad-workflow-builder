@@ -262,7 +262,7 @@ class DAGValidator:
             if node not in in_degree:
                 in_degree[node] = 0
             for dep in self.graph[node]:
-                in_degree[dep] = in_degree.get(dep, 0) + 1
+                in_degree[node] += 1
                 reverse[dep].append(node)
 
         queue = deque(n for n, d in in_degree.items() if d == 0)
